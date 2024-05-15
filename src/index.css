@@ -1,0 +1,49 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.a {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.sta {
+  margin-top: 30px;
+}
+
+#status {
+  margin-left: 10px;
+  border: none;
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.create {
+  background-color: #364fc7;
+}
+
+.sb {
+  width: 500px;
+  background-color: white;
+}
+
+.Sb {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url("https://img.freepik.com/free-photo/view-arrangement-with-keyboard-notebooks_23-2148847749.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sb p {
+  font-weight: 600;
+}
