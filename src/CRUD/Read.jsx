@@ -11,11 +11,13 @@ function Read() {
   useEffect(() => {
     axios
       .get("https://employeeserver-qdbh.onrender.com/users" + id)
-      .then((res) => setData(res.data))
+      .then((res) => {
+        setData(res.data);
+      })
       .catch((err) => console.log(err));
   }, []);
   return (
-    <div className="container big b">
+    <div className="container big Sb">
       <div className="container p-5 sb">
         <p>ID : {Data.id}</p>
         <p>Name : {Data.name}</p>
