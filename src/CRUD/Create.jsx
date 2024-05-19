@@ -13,7 +13,7 @@ function Create() {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-      .post("https://employeeserver-qdbh.onrender.com/users", inputData)
+      .post("https://employeeserver-1.onrender.com/users", inputData)
       .then((res) => {
         alert("Data Posted SuccessFully!");
         navigate("/");
