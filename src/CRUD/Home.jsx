@@ -5,15 +5,11 @@ import { Link, useNavigate } from "react-router-dom";
 
 function Home() {
   const navigate = useNavigate();
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
 
   const [data, setData] = useState([]);
   useEffect(() => {
     axios
-      .get("https://employeeserver-qdbh.onrender.com/users")
+      .get("https://employeeserver-1.onrender.com/users")
       .then((res) => {
         console.log(res.data);
         return setData(res.data);
@@ -25,7 +21,7 @@ function Home() {
     const confirm = window.confirm("Do you Like To Delte");
     if (confirm) {
       axios
-        .delete("https://employeeserver-qdbh.onrender.com/users" + id)
+        .delete("https://employeeserver-1.onrender.com/users/" + id)
         .then((res) => {
           alert("Record Deleted");
           navigate("/");

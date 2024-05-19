@@ -14,7 +14,7 @@ function Update() {
   const navigate = useNavigate();
   useEffect(() => {
     axios
-      .get("https://employeeserver-qdbh.onrender.com/users" + id)
+      .get("https://employeeserver-1.onrender.com/users" + id)
       .then((res) => setInputData(res.data))
       .catch((err) => console.log(err));
   }, []);
@@ -22,7 +22,7 @@ function Update() {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-      .put("https://employeeserver-qdbh.onrender.com/users" + id, inputData)
+      .put("https://employeeserver-1.onrender.com/users/" + id, inputData)
       .then((res) => {
         alert("Data Updated SuccessFully!");
         navigate("/");

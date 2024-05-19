@@ -10,8 +10,9 @@ function Read() {
   const [Data, setData] = useState([]);
   useEffect(() => {
     axios
-      .get("https://employeeserver-qdbh.onrender.com/users" + id)
+      .get("https://employeeserver-1.onrender.com/users/" + id)
       .then((res) => {
+        console.log(res.data);
         setData(res.data);
       })
       .catch((err) => console.log(err));
